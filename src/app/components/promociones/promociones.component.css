@@ -1,0 +1,19 @@
+.content {
+  background-color: #F4F6F8;
+  border-radius: 15px;
+  box-shadow: 2px 7px 21px -1px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 2px 7px 21px -1px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 2px 7px 21px -1px rgba(0, 0, 0, 0.41);
+}
+.table{
+    --bs-table-bg: transparent;
+}
+
+.btn {
+  color: #000;
+  border: 1px solid #101d42;
+}
+.btn:hover {
+  background-color: #101d42;
+  color: #fff;
+}

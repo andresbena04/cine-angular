@@ -1,0 +1,61 @@
+<div class="container mt-5 mb-5">
+    <h2 class="text-center mb-4">TARIFAS</h2>
+    <div class="row content">
+        <div class="col-md-6 mt-4">
+            <div class="table-responsive">
+                <table class="table table-hover mx-auto text-center custom-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">----</th>
+                        <th scope="col">2D General</th>
+                        <th scope="col">2D Tarjeta</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        @for (tarifa of tarifas2D; track $index) {
+                            <tr>
+                                <td>{{tarifa.dia}}</td>
+                                <td>{{tarifa.precio_normal | numberFormat}}</td>
+                                <td>{{tarifa.precio_tarjeta | numberFormat}}</td>
+                            </tr>     
+                        }             
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <div class="col-md-6 mt-4">
+            <div class="table-responsive">
+                <table class="table table-hover mx-auto text-center">
+                    <thead>
+                      <tr>
+                        <th scope="col">----</th>
+                        <th scope="col">3D General</th>
+                        <th scope="col">3D Tarjeta</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        @for (tarifa of tarifas3D; track $index) {
+                            <tr>
+                                <td>{{tarifa.dia}}</td>
+                                <td>{{tarifa.precio_normal | numberFormat}}</td>
+                                <td>{{tarifa.precio_tarjeta | numberFormat}}</td>
+                            </tr>     
+                        }                  
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <div class="col-md-12 mb-4">
+            <p class="text-center">*El valor de las tarifas puede diferir sin previo aviso, algunas tarifas aplican terminos y condiciones para su aplicación.</p>
+            <p class="text-center">Las tablas mostradas arriba aplican solo para compras presenciales en nuestras TAQUILLAS.</p>
+            <ul>
+                <li>Martes 2x1 </li>
+                <li>Miércoles 2x1 para TODOS ( * No aplica para Pre-Estrenos o Funciones Especiales )</li>
+            </ul>
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-outline-primary" [routerLink]="['/tarjeta-cliente']">Conoce sobre nuestra <u>Tarjeta</u></button>
+            </div>
+            
+        </div> 
+    </div>
+</div>

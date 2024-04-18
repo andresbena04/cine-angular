@@ -1,0 +1,49 @@
+<footer class="footer  text-light py-3">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-3 text-center informacion">
+                <div>
+                    <a role="button"><img src="assets/img/logo.png" class="logo" alt="Cinema Logo"></a>
+                </div>
+                <div>
+                    <a [routerLink]="['/terminos-condiciones']" class="footer-link">Términos y Condiciones</a>
+                </div>
+                <div>
+                    <a [routerLink]="['/tarjeta-cliente']" class="footer-link">Preguntas Frecuentes</a>
+                </div>
+                <div>
+                    <a [routerLink]="['/pqr']" class="footer-link">PQRS</a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center d-md-none">
+                <hr class="w-75">
+            </div>
+            <div class="col-md-6 justify-content-center text-center d-flex flex-lg-row flex-column servicios">
+                <div><a [routerLink]="['/conocenos']" class="footer-link me-md-3">Conócenos</a></div>
+                <div><a [routerLink]="['/contactenos']" class="footer-link me-md-3">Contáctenos</a></div>
+                <div><a [routerLink]="['/publicidad']" class="footer-link me-md-3">Publicidad</a></div>
+                <div><a [routerLink]="['/servicios']" class="footer-link me-md-3">Servicios adicionales</a></div>               
+            </div>
+            <div class="d-flex justify-content-center d-md-none">
+                <hr class="w-75">
+            </div>
+            <div class="col-md-3 text-center redes">
+                <a href=""><i class='bx bxl-facebook-square icon'></i></a>
+                <a href=""><i class='bx bxl-instagram icon'></i></a>
+                <a href=""><i class='bx bxl-twitter icon'></i></a>
+                <a href=""><i class='bx bxl-youtube icon'></i></a>
+            </div>
+            <div class="d-flex justify-content-center d-md-none">
+                <hr class="w-75">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="mb-0">&copy; {{year}} - Todos los derechos reservados</p>
+            </div>
+            <div class="col-md-12 text-center">
+                <p class="mb-0">Created with ❤️ by <a href="https://github.com/andresbena04" target="_blank">Andres Benavides</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
