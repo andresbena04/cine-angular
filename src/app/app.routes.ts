@@ -9,9 +9,11 @@ import { CafeteriaComponent } from './components/cafeteria/cafeteria.component';
 import { PqrComponent } from './components/pqr/pqr.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { CarteleraComponent } from './components/cartelera/cartelera.component';
+import { ProximamenteComponent } from './components/proximamente/proximamente.component';
 
 export const routes: Routes = [
-    {path: 'tarjeta-cliente', component:TarjetaClienteComponent},
+    {path: '', component:CarteleraComponent},
+    {path: 'tarjeta-cliente',component:TarjetaClienteComponent},
     {path: 'conocenos', component:ConocenosComponent},
     {path: 'publicidad', component:PublicidadComponent},
     {path: 'servicios', component:ServiciosComponent},
@@ -20,5 +22,7 @@ export const routes: Routes = [
     {path: 'cafeteria', component:CafeteriaComponent},
     {path: 'pqr', component:PqrComponent},
     {path: 'contactenos', component:ContactoComponent},
-    {path: 'cartelera', component:CarteleraComponent}
+    {path: 'cartelera', component:CarteleraComponent},
+    {path: 'proximamente', component:ProximamenteComponent},
+    { path: '**', redirectTo: '' }
 ];

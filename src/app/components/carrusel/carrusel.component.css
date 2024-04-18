@@ -1,4 +1,7 @@
 .carousel-item img {
-    height: 20rem; /* Establecer la altura deseada */
-    /* Ajustar la imagen para que cubra el contenedor */
+    height: 20rem; 
+}
+.carousel-icon:hover{
+ background-color: #232ED1;
+ border-radius: 50px;
 }

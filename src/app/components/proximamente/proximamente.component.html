@@ -1,20 +1,22 @@
 <div class="container mt-2 mb-5">
-    <app-carrusel></app-carrusel>
-    <h2 class="text-center mb-4 mt-4">CARTELERA</h2>
+    <h2 class="text-center mb-4 mt-4">Proximante</h2>
     <div class="content mt-4">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 ms-2 me-2">
-            @for (estreno of estrenos; track $index) {
+            @for (proximo of proximos; track $index) {
                 <div class="col mb-3 mt-4">
                     <a role="button" class="card position-relative">
-                        <span class="badge bg-primary position-absolute fs-6">Estreno</span>
-                        <img src="{{estreno.poster}}" class="card-img-top" alt="Poster {{estreno.nombre}}">
+                        <div class="header-fecha text-center">
+                            <span>{{proximo.fecha_estreno}}</span>
+                        </div>
+                        <span class="badge bg-primary position-absolute fs-6">Proximamente</span>
+                        <img src="{{proximo.poster}}" class="card-img-top" alt="Poster {{proximo.nombre}}">
                         <div class="card-footer">
                             <div class="row">
                                 <div class="text-center">
-                                    <span class="fw-bold">{{estreno.nombre}}</span>
+                                    <span class="fw-bold">{{proximo.nombre}}</span>
                                 </div>
                                 <div class="footer-info text-center">
-                                    <span>Ver información</span>
+                                    <span>Ver detalles</span>
                                 </div>
                             </div>
                         </div>

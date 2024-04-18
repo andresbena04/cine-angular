@@ -14,3 +14,17 @@ export interface Tarifa3D {
     precio_normal: number,
     precio_tarjeta: number
 }
+export interface Cartelera{
+    nombre:string,
+    poster:string,
+
+}
+export interface Proximamente{
+    nombre:string,
+    poster:string,
+    fecha_estreno: string
+}
+export interface Poster{
+    nombre:string,
+    img:string
+}

@@ -1,3 +1,28 @@
-.card img{
-    height: 22rem;
+.content {
+  background-color: #f4f6f8;
+  border-radius: 15px;
+  box-shadow: 2px 7px 21px -1px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 2px 7px 21px -1px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 2px 7px 21px -1px rgba(0, 0, 0, 0.41);
+}
+.card {
+  text-decoration: none;
+}
+.card img {
+  height: 22rem;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.badge {
+  width: 8rem;
+  top: 1.5rem;
+  left: -1rem;
+  transform: rotate(-40deg);
+  background-color: #232ED1 !important;
+}
+.footer-info {
+  background-color: #232ED1;
+  color: #fff;
+  border-radius: 10px;
 }

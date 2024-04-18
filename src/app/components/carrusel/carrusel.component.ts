@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EstrenosService } from '../../services/estrenos.service';
 
 @Component({
   selector: 'app-carrusel',
@@ -9,4 +10,17 @@ import { Component } from '@angular/core';
 })
 export class CarruselComponent {
 
+  posters: any = []
+  constructor(private estrenoSercive:EstrenosService){}
+
+  ngOnInit(){
+    this.estrenoSercive.getPoster().subscribe(
+      res=>{
+        this.posters = res
+        console.log(res)
+      }, err=>{
+        console.log(err)
+      }
+    )
+  }
 }
