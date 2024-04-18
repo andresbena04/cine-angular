@@ -1,19 +1,64 @@
-<div class="container mt-4">
-    <h2 class="text-center">Contactanos</h2>
-    <div class="row">
-        <div class="col-md-6">
-            <span>Nuestras sedes</span>
-            <div class="row">
-                <div class="col-6">
-                    <img src="assets/icon/google-maps.svg" alt="Icon Google Maps">
-                </div>
-                <div class="col-6">
-                    <span>Magnague, Bolivar</span>
+<div class="container mt-4 mb-5">
+    <h2 class="text-center mb-4">Contactanos</h2>
+    <div class="row align-items-center content">
+        <div class="col-md-6 order-md-1 order-2 text-center">
+            <span class="fs-4 fw-bold">Nuestras sedes</span>
+            <div class="mt-1">
+                <span>Magangué, Bolívar</span>
+            </div>
+            <div class="mt-4">
+                <span class="d-flex align-items-center"><i class='bx bx-map-pin icon'></i> LOCAL 144</span>
+            </div>
+            <div class="mt-4">
+                <span class="d-flex align-items-center"><i class='bx bxs-envelope icon'></i>
+                    correo_electronico.com</span>
+            </div>
+            <div class="mt-4">
+                <span class="d-flex align-items-center"><i class='bx bxs-phone icon'></i> +57 311 111 1111</span>
+            </div>
+        </div>
+        <div class="col-md-6 order-md-2 order-3 mb-md-0 mb-3">
+            <div class="form mt-4">
+                <div class="row ms-2 me-2">
+                    <div class="col-6 mb-3 mt-3">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="nombre" placeholder="" />
+                            <label for="nombre">Nombre</label>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3 mt-3">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="correo" placeholder="" />
+                            <label for="correo">Correo</label>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="asunto" placeholder="" />
+                            <label for="asunto">Asunto</label>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="form-floating">
+                            <textarea class="form-mensaje form-control" id="mensaje" placeholder=""></textarea>
+                            <label for="mensaje">Mensaje</label>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3 d-flex justify-content-center">
+                        <button class="btn btn-outline-primary w-50">Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <span>Redes Sociales</span>
+        <div class="col-md-12 order-md-3 order-2 mb-md-5 mb-0">
+            <div class="content-map mt-5" style="text-decoration:none; overflow:hidden;max-width:100%;">
+                <div style="overflow:hidden;resize:none;max-width:100%;">
+                    <div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe
+                            style="height:100%;width:100%;border:0;" frameborder="0"
+                            src="https://www.google.com/maps/embed/v1/place?q=Éxito,+Magangué,+Bolívar,+Colombia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
