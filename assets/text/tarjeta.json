@@ -1,0 +1,25 @@
+{
+    "tarjeta_cliente": [
+      {
+        "titulo": "¿Qué es la tarjeta Cliente?",
+        "contenido": "Es una tarjeta plástica que te acredita como cliente VIP de Cinema films en cualquiera de sus sedes en Colombia cuenta con un código de barras y es personal e intransferible, tenerla te hace beneficiario de muchos descuentos en nuestras instalaciones, para acceder a estos descuentos siempre debes mostrar la tarjeta."
+      },
+      {
+        "titulo": "¿Que vigencia tiene?",
+        "contenido": "Tiene una vigencia de 1 año despues de la fecha de compra y puede ser usada inmediatamente despues de haberla adquirido."
+      },
+      {
+        "titulo": "¿Cómo Funciona?",
+        "contenido": "Funciona como una tarjeta de cliente preferencial, al mostrarla y validarla obtendrás tarifas preferenciales, también puedes recargarla y obsequiarla pues dentro de nuestras instalaciones la tarjeta también funciona como una tarjeta débito, además puedes comprar en línea si tienes saldo en tu tarjeta."
+      },
+      {
+        "titulo": "Acumulación de puntos",
+        "contenido": "Con cada compra que realices el sistema te sumará 1 (uno) punto por cada 1.000 (mil) pesos comprados. Estos puntos son acumulables y tienen la misma vigencia que la tarjeta, por tanto el día que la tarjeta expire los puntos se eliminarán."
+      },
+      {
+        "titulo": "¿Dónde la Adquiero?",
+        "contenido": "Adquiérela en la sede de Cinema films más cercana, solo necesitas tus datos personales y tiene un valor de 10.000 pesos, la tarjeta se activa y se entrega de forma inmediata."
+      }
+    ]
+  }
+  

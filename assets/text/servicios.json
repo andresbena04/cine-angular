@@ -1,0 +1,29 @@
+{
+    "servicios": [
+      {
+        "titulo": "Alquiler de lobby",
+        "contenido": [
+          "Alquila nuestras instalaciones y descubre un lugar excepcional para el esparcimiento y la comodidad, ideal para compartir momentos en familia o celebrar eventos y reuniones sociales. Nuestras instalaciones son perfectas para atraer a un amplio público en áreas de influencia clave y generar un impacto significativo.",
+          "Transforma tus eventos corporativos en experiencias memorables y llenas de innovación en nuestras instalaciones, donde podrás realizar presentaciones, lanzamientos de marca y reuniones sociales. Te ofrecemos atención personalizada y tecnología de vanguardia, incluyendo espectaculares ayudas visuales y sonido envolvente de alta calidad.",
+          "Celebra las ocasiones especiales de tus seres queridos o colegas en un ambiente único, eligiendo el paquete perfecto para disfrutar junto a tus invitados más cercanos. Nuestras instalaciones son ideales para una amplia gama de eventos, desde conferencias y capacitaciones hasta cumpleaños y reuniones empresariales."
+        ]
+      },
+      {
+        "titulo": "Cupones empresariales",
+        "contenido": [
+          "Brinda a tus clientes o empleados la oportunidad de disfrutar de una experiencia única, con la mejor atención."
+        ],
+        "lista": [
+          "Cupones empresariales de taquilla.",
+          "Cupones empresariales de confitería."
+        ]
+      },
+      {
+        "titulo": "Servicios personalizados",
+        "contenido": [
+          "Disponemos de un amplio equipo listo para servir en cualquier escenario pensable, llámanos para dar solución a tu requerimiento y ofrecerte la mejor oferta posible, en Cinema podrás hacer realidad eventos, solicitudes de matrimonio, reencuentros y mucho más."
+        ]
+      }
+    ]
+  }
+  
