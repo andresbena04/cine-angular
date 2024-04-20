@@ -10,6 +10,7 @@ import { PqrComponent } from './components/pqr/pqr.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { CarteleraComponent } from './components/cartelera/cartelera.component';
 import { ProximamenteComponent } from './components/proximamente/proximamente.component';
+import { PeliculaComponent } from './components/pelicula/pelicula.component';
 
 export const routes: Routes = [
     {path: '', component:CarteleraComponent},
@@ -24,5 +25,6 @@ export const routes: Routes = [
     {path: 'contactenos', component:ContactoComponent},
     {path: 'cartelera', component:CarteleraComponent},
     {path: 'proximamente', component:ProximamenteComponent},
+    {path: 'pelicula/:source/:id', component:PeliculaComponent},
     { path: '**', redirectTo: '' }
 ];

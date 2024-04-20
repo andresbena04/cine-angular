@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CarruselComponent } from '../carrusel/carrusel.component';
 import { EstrenosService } from '../../services/estrenos.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-cartelera',
   standalone: true,
-  imports: [CarruselComponent],
+  imports: [CarruselComponent, RouterLink],
   templateUrl: './cartelera.component.html',
   styleUrl: './cartelera.component.css'
 })

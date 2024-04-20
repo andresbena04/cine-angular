@@ -9,3 +9,11 @@
     resize: none; 
     height: 11rem;
 }
+.btn {
+  color: #000;
+  border: 1px solid #101d42;
+}
+.btn:hover {
+  background-color: #101d42;
+  color: #fff;
+}

@@ -1,0 +1,46 @@
+<div class="container mt-1 mb-5">
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a [routerLink]="['/', source]" class="breadcrumb-link">{{source_name}}</a></li>
+          <li class="breadcrumb-item active" aria-current="page">{{dataMovie.nombre}}</li>
+        </ol>
+      </nav>
+      
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center mb-3">
+            <img src="{{dataMovie.poster}}" class="poster" alt="Poster {{dataMovie.nombre}}">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <h2>{{dataMovie.nombre}}<span class="badge text-bg-secondary ms-2">{{dataMovie.duracion}} Min</span></h2>
+            <div>
+                <button class="btn w-100" data-bs-toggle="modal" data-bs-target="#ModalVideo">Ver trailer</button>
+            </div>
+            <span class="fw-bold">Sinopsis</span>
+            <p>{{dataMovie.sinopsis}}</p>
+            <hr>
+            <h5 class="fs-6">Nombre original: <span>{{dataMovie.nombre_original}}</span></h5>
+            <h5 class="fs-6">Clasificación: <span>{{dataMovie.clasificacion}}</span></h5>
+            <h5 class="fs-6">Reparto: <span>{{dataMovie.reparto}}</span></h5>
+            <h5 class="fs-6">Director: <span>{{dataMovie.director}}</span></h5>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 text-center mb-3">
+            <div class="content h-100">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="ModalVideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-lg">
+        <div class="modal-content">
+            <div class="modal-body d-flex justify-content-center">
+                <iframe width="760" height="415" [src]="videoUrl" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>

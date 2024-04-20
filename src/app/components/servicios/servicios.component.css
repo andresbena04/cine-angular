@@ -8,3 +8,7 @@
   p{
     text-align: justify;
   }
+  .img-lobby{
+    width: 100%;
+    border-radius: 15px;
+  }

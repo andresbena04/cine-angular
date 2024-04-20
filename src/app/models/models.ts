@@ -14,17 +14,32 @@ export interface Tarifa3D {
     precio_normal: number,
     precio_tarjeta: number
 }
-export interface Cartelera{
-    nombre:string,
-    poster:string,
-
+export interface Cartelera {
+    id: string,
+    nombre: string,
+    poster: string,
+    nombre_original: string,
+    sinopsis: string,
+    director: string,
+    reparto: string[],
+    duracion: number,
+    clasificacion: string
+    url_trailer: string
 }
-export interface Proximamente{
-    nombre:string,
-    poster:string,
-    fecha_estreno: string
+export interface Proximamente {
+    id: string,
+    nombre: string,
+    poster: string,
+    fecha_estreno: string,
+    nombre_original: string,
+    sinopsis: string,
+    director: string,
+    reparto: string[],
+    duracion: number,
+    clasificacion: string
+    url_trailer: string
 }
-export interface Poster{
-    nombre:string,
-    img:string
+export interface Poster {
+    nombre: string,
+    img: string
 }

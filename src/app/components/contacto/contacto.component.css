@@ -12,6 +12,10 @@
     box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.41);
    border-radius: 15px;
 }
+.form-mensaje{
+  resize: none; 
+  height: 6.5rem;
+}
 .btn {
   color: #000;
   border: 1px solid #101d42;

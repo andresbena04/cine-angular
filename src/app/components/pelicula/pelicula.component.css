@@ -1,0 +1,54 @@
+.breadcrumb-link {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    margin-bottom: 0.5rem;
+    width: 7rem;
+    overflow: hidden;
+  }
+  
+  .breadcrumb-link::before,
+  .breadcrumb-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #101d42;
+    transition: width 0.5s ease;
+  }
+  
+  .breadcrumb-link::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .breadcrumb-link::after {
+    right: 50%;
+    transform: translateX(50%);
+  }
+  
+  .breadcrumb-link:hover::before,
+  .breadcrumb-link:hover::after {
+    width: 95%;
+  }
+  
+  .breadcrumb-link:hover::before {
+    transition-delay: 0.1s;
+  }
+  
+.poster {
+  height: 22rem;
+}
+.btn {
+  color: #000;
+  border: 1px solid #101d42;
+}
+.btn:hover {
+  background-color: #101d42;
+  color: #fff;
+}
+
+.content {
+  border: 1px solid #000;
+}

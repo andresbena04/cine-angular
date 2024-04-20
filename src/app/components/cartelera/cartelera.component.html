@@ -2,10 +2,10 @@
     <app-carrusel></app-carrusel>
     <h2 class="text-center mb-4 mt-4">CARTELERA</h2>
     <div class="content mt-4">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 ms-2 me-2">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 ms-2 me-2">
             @for (estreno of estrenos; track $index) {
                 <div class="col mb-3 mt-4">
-                    <a role="button" class="card position-relative">
+                    <a role="button" class="card position-relative" [routerLink]="['/pelicula',  'cartelera', estreno.id ]">
                         <span class="badge bg-primary position-absolute fs-6">Estreno</span>
                         <img src="{{estreno.poster}}" class="card-img-top" alt="Poster {{estreno.nombre}}">
                         <div class="card-footer">

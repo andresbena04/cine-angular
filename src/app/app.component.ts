@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AppService } from './services/app.service';
 
 
 @Component({
@@ -12,4 +13,9 @@ import { FooterComponent } from './components/footer/footer.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  constructor(private appService: AppService) { }
+
+  ngOnInit(): void {
+    this.appService.scrollToTopOnRouterNavigation();
+  }
 }

@@ -17,7 +17,6 @@ export class CarruselComponent {
     this.estrenoSercive.getPoster().subscribe(
       res=>{
         this.posters = res
-        console.log(res)
       }, err=>{
         console.log(err)
       }

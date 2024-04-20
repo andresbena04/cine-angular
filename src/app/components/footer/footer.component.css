@@ -1,55 +1,55 @@
-:root{
-    --white: #fff;
+:root {
+  --white: #fff;
 }
-.footer{
-  background-color: #101D42;
+.footer {
+  background-color: #101d42;
 }
-.logo{
-    width: 10rem;
+.logo {
+  width: 10rem;
 }
-.icon{
-    font-size: 2.2rem;
+.icon {
+  font-size: 2.2rem;
 }
-.icon:hover{
-    transform: scale(1.2);
+.icon:hover {
+  transform: scale(1.2);
 }
-a{
-    text-decoration: none;
-    color: var(--white);
+a {
+  text-decoration: none;
+  color: var(--white);
 }
 .footer-link {
-    position: relative;
-    margin-bottom: 0.5rem;
-    width: 7rem;
-    overflow: hidden;
-  }
-  
-  .footer-link::before,
-  .footer-link::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 0%;
-    height: 3px;
-    background-color: #fff;
-    transition: width 0.5s ease;
-  }
-  
-  .footer-link::before {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .footer-link::after {
-    right: 50%;
-    transform: translateX(50%);
-  }
-  
-  .footer-link:hover::before,
-  .footer-link:hover::after {
-    width: 95%;
-  }
-  
-  .footer-link:hover::before {
-    transition-delay: 0.1s; 
-  }
+  position: relative;
+  margin-bottom: 0.5rem;
+  width: 7rem;
+  overflow: hidden;
+}
+
+.footer-link::before,
+.footer-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #fff;
+  transition: width 0.5s ease;
+}
+
+.footer-link::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-link::after {
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.footer-link:hover::before,
+.footer-link:hover::after {
+  width: 95%;
+}
+
+.footer-link:hover::before {
+  transition-delay: 0.1s;
+}

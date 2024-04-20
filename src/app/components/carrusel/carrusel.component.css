@@ -1,7 +1,3 @@
 .carousel-item img {
-    height: 20rem; 
-}
-.carousel-icon:hover{
- background-color: #232ED1;
- border-radius: 50px;
+    height: 25rem; 
 }
