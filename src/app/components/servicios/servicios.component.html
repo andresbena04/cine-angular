@@ -1,44 +1,24 @@
 <div class="container bg mb-5 mt-5">
     <h1 class="text-center mb-4">SERVICIOS ADICIONALES</h1>
     <div class="row content ms-2 me-2">
-        <div class="col-md-6 mt-4">
-            <h3>Alquiler de lobby</h3>
-            <p>Alquila nuestras instalaciones y descubre un lugar excepcional para el esparcimiento y la comodidad,
-                ideal para compartir momentos en familia o celebrar eventos y reuniones sociales. Nuestras instalaciones
-                son perfectas para atraer a un amplio público en áreas de influencia clave y generar un impacto
-                significativo.</p>
-            <p>
-                Transforma tus eventos corporativos en experiencias memorables y llenas de innovación en nuestras
-                instalaciones, donde podrás realizar presentaciones, lanzamientos de marca y reuniones sociales. Te
-                ofrecemos atención personalizada y tecnología de vanguardia, incluyendo espectaculares ayudas visuales y
-                sonido envolvente de alta calidad.
-            </p>
-            <p>
-                Celebra las ocasiones especiales de tus seres queridos o colegas en un ambiente único, eligiendo el
-                paquete perfecto para disfrutar junto a tus invitados más cercanos. Nuestras instalaciones son ideales
-                para una amplia gama de eventos, desde conferencias y capacitaciones hasta cumpleaños y reuniones
-                empresariales.
-            </p>
-        </div>
-        <div class="col-md-6 mb-md-0 mb-3 d-flex align-items-center">
+        <div class="col-md-6 mb-md-0 mt-3 order-lg-2 d-flex align-items-center">
             <img src="assets/img/lobby.webp"  class="img-lobby" alt="Imagen Lobby">
         </div>
-        <div class="col-md-12">
-            <h3>Cupones empresariales</h3>
-            <p>Brinda a tus clientes o empleados la oportunidad de disfrutar de una experiencia única, con la mejor
-                atención.</p>
-            <ul>
-                <li>Cupones empresariales de taquilla.</li>
-                <li>Cupones empresariales de confitería.</li>
-            </ul>
-        </div>
-        <div class="col-md-12 mb-4">
-            <h3>Servicios personalizados</h3>
-            <p>
-                Disponemos de un amplio equipo listo para servir en cualquier escenario pensable, llamanos para dar
-                solucion a tu requerimiento y ofrecerte la mejor oferta posible, en Cinema podras hacer
-                realidad eventos, solicitudes de matrimonio, reencuentos y mucho mas.
-            </p>
-        </div>
+        @for (item of text; track text; let first = $first; let i = $index) {
+            <div class="col-md-{{ first ? '6' : '12' }} order-md-{{ first ? 1 : i+1}} mt-4">
+                <h3>{{item.titulo}}</h3>
+                @for (contenido of item.contenido; track $index) {
+                 <p>{{contenido}}</p>
+                }
+                @if (item.lista) {
+                    <ul>
+                        @for (lista of item.lista; track $index) {
+                            <li>{{lista}}</li>
+                        }
+                    </ul>
+                }
+            </div>
+        }
+        
     </div>
 </div>

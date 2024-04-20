@@ -1,0 +1,28 @@
+{
+    "terminos_y_condiciones": [
+        {
+            "titulo": "Aceptación de los Términos:",
+            "contenido": "Al acceder o utilizar los servicios de Cinema, aceptas estar sujeto/a a estos términos y condiciones. Si no estás de acuerdo con alguna parte de estos términos, te solicitamos que no utilices nuestros servicios."
+        },
+        {
+            "titulo": "Uso de las Instalaciones: ",
+            "contenido": "Nuestras instalaciones están diseñadas para proporcionar una experiencia cinematográfica excepcional. Al utilizar nuestras instalaciones, aceptas seguir todas las normas y regulaciones establecidas por Cinema para garantizar la seguridad y comodidad de todos los clientes."
+        },
+        {
+            "titulo": "Compra de Entradas:",
+            "contenido": "La compra de entradas para nuestras proyecciones se realiza a través de nuestros canales oficiales de venta, incluyendo nuestro sitio web y taquillas físicas. Las entradas son válidas únicamente para la proyección y fecha especificadas. No se permiten cambios ni devoluciones, a menos que se indique lo contrario."
+        },
+        {
+            "titulo": "Política de Cancelación:",
+            "contenido": "Cinema se reserva el derecho de cancelar o modificar cualquier proyección por razones fuera de nuestro control, como problemas técnicos o condiciones climáticas adversas. En caso de cancelación, se ofrecerán reembolsos o intercambios de entradas según corresponda."
+        },
+        {
+            "titulo": "Conducta del Cliente:",
+            "contenido": "Todos los clientes deben comportarse de manera respetuosa y cortés hacia el personal de Cinema y otros clientes. No se permitirá el ingreso de alimentos o bebidas externas a nuestras instalaciones, a menos que se indique lo contrario. Se prohíbe terminantemente el uso de dispositivos de grabación durante las proyecciones."
+        },
+        {
+            "titulo": "Política de Privacidad:",
+            "contenido": "Cinema respeta la privacidad de sus clientes y se compromete a proteger la información personal recopilada durante la compra de entradas u otros servicios. Consulta nuestra política de privacidad para obtener más información sobre cómo manejamos tus datos personales."
+        }
+    ]
+}

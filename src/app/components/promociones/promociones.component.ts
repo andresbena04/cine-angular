@@ -1,7 +1,6 @@
 import { Component, Pipe } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TarifasService } from '../../services/tarifas.service';
-import { CurrencyPipe } from '@angular/common';
 import { NumberPipe } from '../../pipes/number.pipe';
 
 @Component({

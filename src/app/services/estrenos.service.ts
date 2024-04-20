@@ -21,7 +21,8 @@ export class EstrenosService {
         "reparto": ["Timothee Chalamet", "Zendaya", "Rebecca Ferguson"],
         "duracion": 155,
         "clasificacion": "PG-13",
-        "url_trailer": "https://www.youtube.com/embed/TTgk_iT8Uts"
+        "url_trailer": "https://www.youtube.com/embed/TTgk_iT8Uts",
+        "estreno": true
       },
       {
         "id": "2",
@@ -33,7 +34,8 @@ export class EstrenosService {
         "reparto": ["Robert Pattinson", "Zoe Kravitz", "Paul Dano"],
         "duracion": 176,
         "clasificacion": "PG-13",
-        "url_trailer": "https://www.youtube.com/embed/fWQrd6cwJ0A?si=a3VHQCVUFejxF2bU"
+        "url_trailer": "https://www.youtube.com/embed/fWQrd6cwJ0A?si=a3VHQCVUFejxF2bU",
+        "estreno": true
       },
       {
         "id": "3",
@@ -45,7 +47,8 @@ export class EstrenosService {
         "reparto": ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"],
         "duracion": 190,
         "clasificacion": "+12",
-        "url_trailer": "https://www.youtube.com/embed/kPMi_VxqcUc?si=JpTQl_QnriExcIc5"
+        "url_trailer": "https://www.youtube.com/embed/kPMi_VxqcUc?si=JpTQl_QnriExcIc5",
+        "estreno": false
       },
       {
         "id": "4",
@@ -57,7 +60,8 @@ export class EstrenosService {
         "reparto": ["Tom Cruise", "Rebecca Ferguson", "Vanessa Kirby"],
         "duracion": 163,
         "clasificacion": "PG-13",
-        "url_trailer": "https://www.youtube.com/embed/XoDmKCZBeeI?si=J_1ECFQGeRJs07vB"
+        "url_trailer": "https://www.youtube.com/embed/XoDmKCZBeeI?si=J_1ECFQGeRJs07vB",
+        "estreno": false
       },
       {
         "id": "5",
@@ -69,7 +73,8 @@ export class EstrenosService {
         "reparto": ["Chris Hemsworth", "Natalie Portman", "Tessa Thompson"],
         "duracion": 159,
         "clasificacion": "PG-13",
-        "url_trailer": "https://www.youtube.com/embed/vKKu-Wt7O2Q?si=PzrJHLv2TpzAXHPq"
+        "url_trailer": "https://www.youtube.com/embed/vKKu-Wt7O2Q?si=PzrJHLv2TpzAXHPq",
+        "estreno": false
       }
     ];
 

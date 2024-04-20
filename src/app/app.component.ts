@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AppService } from './services/app.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @Component({

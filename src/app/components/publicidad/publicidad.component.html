@@ -1,26 +1,11 @@
 <div class="container mt-5 mb-5">
     <h2 class="text-center mb-4">PUBLICIDAD</h2>
     <div class="row content ms-2 me-2">
-        <div class="col-md-12 mt-4">
-            <h3>EN PANTALLA</h3>
-            <p>Pauta tus comerciales en la pantalla grande, también puedes dar a conocer tu empresa y marca, generando
-                un mayor impacto en el público cautivo y receptivo dentro de nuestras salas con grandes resultados.
-                Impresiona a esa persona que tanto quieres, haciendo uso de nuestras pantallas para conmemorar fechas
-                especiales, mediante nuestro servicio único de pauta único día.
-            </p>
-        </div>
-        <div class="col-md-12">
-            <h3>STANDS O ROMPETRÁFICOS</h3>
-            <p>Impacta a tus futuros y potenciales clientes en el mejor lugar, lleva tus productos y servicios a
-                nuestros espacios, adecuando un excelente lugar para promocionar. Sin duda se convertirá en la mejor
-                vitrina.</p>
-        </div>
-        <div class="col-md-12 mb-4">
-            <h3>ACTIVACIÓN DE MARCA</h3>
-            <p>Exponga su marca de manera única y con la mayor afluencia de público, además de brindarle a su marca el
-                posicionamiento que deseas a través de este efectivo medio de comunicación. junto a los estrenos más
-                esperados, Obtenga un mayor impacto en las personas que visitan nuestras salas e instalaciones.
-            </p>
-        </div>
+        @for (item of text; track $index) {
+            <div class="col-md-12 mt-4">
+                <h3>{{item.titulo}}</h3>
+                <p>{{item.contenido}}</p>
+            </div>
+        }
     </div>
 </div>

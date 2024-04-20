@@ -1,14 +1,22 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from '../navbar/navbar.component';
-import { FooterComponent } from '../footer/footer.component';
+import { TextoService } from '../../services/texto.service';
 
 @Component({
   selector: 'app-tarjeta-cliente',
   standalone: true,
-  imports: [NavbarComponent, FooterComponent],
+  imports: [],
   templateUrl: './tarjeta_cliente.component.html',
   styleUrl: './tarjeta_cliente.component.css'
 })
 export class TarjetaClienteComponent {
 
+  text: any = []
+  constructor(private textoService:TextoService) { }
+  ngOnInit(){
+    this.textoService.getTarjetaCliente().subscribe(
+      res => {
+        this.text = res.tarjeta_cliente
+      }
+    )
+  }
 }

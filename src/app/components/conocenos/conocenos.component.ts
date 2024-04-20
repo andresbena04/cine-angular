@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from '../navbar/navbar.component';
-import { FooterComponent } from '../footer/footer.component';
+import { TextoService } from '../../services/texto.service';
 
 @Component({
   selector: 'app-conocenos',
@@ -11,4 +10,13 @@ import { FooterComponent } from '../footer/footer.component';
 })
 export class ConocenosComponent {
 
+  text: any = []
+  constructor(private textoService:TextoService) { }
+  ngOnInit(){
+    this.textoService.getConocenos().subscribe(
+      res => {
+        this.text = res.conocenos
+      }
+    )
+  }
 }

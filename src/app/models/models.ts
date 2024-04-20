@@ -24,7 +24,8 @@ export interface Cartelera {
     reparto: string[],
     duracion: number,
     clasificacion: string
-    url_trailer: string
+    url_trailer: string,
+    estreno: boolean
 }
 export interface Proximamente {
     id: string,

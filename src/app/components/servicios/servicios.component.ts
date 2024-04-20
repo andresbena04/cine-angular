@@ -1,14 +1,22 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from '../navbar/navbar.component';
-import { FooterComponent } from '../footer/footer.component';
+import { TextoService } from '../../services/texto.service';
 
 @Component({
   selector: 'app-servicios',
   standalone: true,
-  imports: [NavbarComponent, FooterComponent],
+  imports: [],
   templateUrl: './servicios.component.html',
   styleUrl: './servicios.component.css'
 })
 export class ServiciosComponent {
 
+  text: any = []
+  constructor(private textoService:TextoService) { }
+  ngOnInit(){
+    this.textoService.getServicios().subscribe(
+      res => {
+        this.text = res.servicios
+      }
+    )
+  }
 }

@@ -1,14 +1,22 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from '../navbar/navbar.component';
-import { FooterComponent } from '../footer/footer.component';
+import { TextoService } from '../../services/texto.service';
 
 @Component({
   selector: 'app-terminos-condiciones',
   standalone: true,
-  imports: [NavbarComponent, FooterComponent],
+  imports: [],
   templateUrl: './terminos-condiciones.component.html',
   styleUrl: './terminos-condiciones.component.css'
 })
 export class TerminosCondicionesComponent {
 
+  text: any = []
+  constructor(private textoService:TextoService) { }
+  ngOnInit(){
+    this.textoService.getTerminosCondiciones().subscribe(
+      res => {
+        this.text = res.terminos_y_condiciones
+      }
+    )
+  }
 }
