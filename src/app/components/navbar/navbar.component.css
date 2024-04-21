@@ -8,3 +8,7 @@
 .navbar-toggler{
     background-color: #fff;
 }
+.active{
+    background-color: #0D1317;
+    border-radius: 10px;
+}

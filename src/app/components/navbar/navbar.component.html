@@ -7,10 +7,10 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link text-light active" aria-current="page" [routerLink]="['/cartelera']">Cartelera</a>
-        <a class="nav-link text-light" [routerLink]="['/proximamente']">Próximamente</a>
-        <a class="nav-link text-light" [routerLink]="['/promociones']">Promociones</a>
-        <a class="nav-link text-light" [routerLink]="['/cafeteria']">Cafetería</a>
+        <a class="nav-link text-light " [routerLink]="['/cartelera']" [ngClass]="{ 'active': isActive('/') || isActive('/cartelera')  }">Cartelera</a>
+        <a class="nav-link text-light " [routerLink]="['/proximamente']" [ngClass]="{ 'active': isActive('/proximamente') }">Próximamente</a>
+        <a class="nav-link text-light " [routerLink]="['/promociones']" [ngClass]="{ 'active': isActive('/promociones') }">Promociones</a>
+        <a class="nav-link text-light " [routerLink]="['/cafeteria']" [ngClass]="{ 'active': isActive('/cafeteria') }">Cafetería</a>
       </div>
     </div>
   </div>
