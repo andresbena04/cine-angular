@@ -1,0 +1,10 @@
+.container-fecha{ 
+    max-width: 25rem;
+    overflow-x: auto;
+    gap: .5rem;
+}
+.content-fecha{
+    width: 4rem;
+    height: 4rem;
+    font-size: .5rem;
+}

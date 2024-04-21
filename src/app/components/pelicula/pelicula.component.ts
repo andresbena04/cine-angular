@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { EstrenosService } from '../../services/estrenos.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { HorariosComponent } from '../horarios/horarios.component';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-pelicula',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, HorariosComponent, DatePipe],
   templateUrl: './pelicula.component.html',
   styleUrl: './pelicula.component.css'
 })

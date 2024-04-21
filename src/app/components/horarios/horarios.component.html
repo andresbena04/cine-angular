@@ -1,0 +1,11 @@
+<div class="container-fecha d-flex">
+        @for (fecha of fechas; track $index) {
+        <div class="content">
+            <div role="button" class="p-3 border border-primary rounded text-center content-fecha" [ngClass]="{'bg-primary text-white': fecha === fechaActual, 'bg-secondary text-white': fecha > fechaActual && fecha <= fechaFinal, 'bg-light': fecha > fechaFinal}">
+                <div>{{ fecha | date: 'EEEE' }}</div>
+                <div>{{ fecha | date: 'd' }}</div>
+                <div>{{ fecha | date: 'MMMM' }}</div>
+              </div>
+        </div>
+        }
+</div>

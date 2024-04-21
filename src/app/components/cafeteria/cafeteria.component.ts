@@ -21,4 +21,22 @@ export class CafeteriaComponent {
       console.log(err)
     })
   }
+  filtrarMenu(event: any) {
+    const filtro = event.target.value;
+    if(filtro === ""){
+      this.cafeteriaService.getCafeteria().subscribe(res => {
+        this.cafeteria = res
+      }, err => {
+        console.log(err)
+      })
+    }else{
+      this.cafeteriaService.getMenuByCategoria(filtro).subscribe(
+        res => {
+          this.cafeteria = res
+        }, err => {
+          console.log(err)
+        }
+      )
+    }
+}
 }

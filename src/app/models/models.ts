@@ -1,8 +1,9 @@
 export interface Menu {
-    img: string;
-    nombre: string;
-    descripcion: string[];
-    precio: number;
+    img: string,
+    nombre: string,
+    descripcion: string[],
+    precio: number,
+    categoria: string
 }
 export interface Tarifa2D {
     dia: string,
@@ -31,7 +32,7 @@ export interface Proximamente {
     id: string,
     nombre: string,
     poster: string,
-    fecha_estreno: string,
+    fecha_estreno: Date,
     nombre_original: string,
     sinopsis: string,
     director: string,

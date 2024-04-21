@@ -1,11 +1,11 @@
 <div class="container mt-1 mb-5">
     <nav aria-label="breadcrumb" class="mb-4">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a [routerLink]="['/', source]" class="breadcrumb-link">{{source_name}}</a></li>
-          <li class="breadcrumb-item active" aria-current="page">{{dataMovie.nombre}}</li>
+            <li class="breadcrumb-item"><a [routerLink]="['/', source]" class="breadcrumb-link">{{source_name}}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{dataMovie.nombre}}</li>
         </ol>
-      </nav>
-      
+    </nav>
+
     <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12 text-center mb-3">
             <img src="{{dataMovie.poster}}" class="poster" alt="Poster {{dataMovie.nombre}}">
@@ -23,11 +23,24 @@
             <h5 class="fs-6">Reparto: <span>{{dataMovie.reparto}}</span></h5>
             <h5 class="fs-6">Director: <span>{{dataMovie.director}}</span></h5>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 text-center mb-3">
-            <div class="content h-100">
-
+        @if(source == "proximamente"){
+            <div class="col-lg-4 col-md-12 col-sm-12 text-center mb-3 d-flex align-items-center justify-content-center">
+                <div>
+                    <div>
+                        <span class="fs-3 fw-bold">Espérala muy pronto</span>
+                    </div>
+                    <div>
+                        <span class="fs-5 fw-semibold">{{dataMovie.fecha_estreno | date: 'd MMM, y'}}</span>
+                    </div>
+                </div>
             </div>
-        </div>
+        }@else {
+            <div class="col-lg-4 col-md-12 col-sm-12 text-center mb-3">
+                <span class="fs-5 fw-bold">Fechas</span>
+                <app-horarios></app-horarios>
+            </div>
+        }
+        
     </div>
 </div>
 
@@ -36,8 +49,7 @@
     <div class="modal-dialog  modal-lg">
         <div class="modal-content">
             <div class="modal-body d-flex justify-content-center">
-                <iframe width="760" height="415" [src]="videoUrl" title="YouTube video player"
-                    frameborder="0"
+                <iframe width="760" height="415" [src]="videoUrl" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>

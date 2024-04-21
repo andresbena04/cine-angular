@@ -6,7 +6,7 @@
                 <div class="col mb-3 mt-4">
                     <a role="button" class="card position-relative" [routerLink]="['/pelicula', 'proximamente', proximo.id]">
                         <div class="header-fecha text-center">
-                            <span>{{proximo.fecha_estreno}}</span>
+                            <span>{{proximo.fecha_estreno | date:"d MMM, y"}}</span>
                         </div>
                         <span class="badge bg-primary position-absolute fs-6">Proximamente</span>
                         <img src="{{proximo.poster}}" class="card-img-top" alt="Poster {{proximo.nombre}}">
