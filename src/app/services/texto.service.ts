@@ -14,7 +14,7 @@ export class TextoService {
   }
 
   getPublicidad(): Observable<any> {
-    return this.http.get<any>('assets/text/publicidad.json');
+    return this.http.get<any>('assets/text/campaña.json');
   }
 
   getConocenos(): Observable<any> {

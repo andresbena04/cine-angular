@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -11,7 +11,8 @@ import { Router, RouterLink } from '@angular/router';
 })
 export class NavbarComponent {
 
-  constructor(private router:Router){}
+
+  constructor(private router:Router, private route: ActivatedRoute){}
 
   isActive(route: string): boolean {
     return this.router.url === route;
